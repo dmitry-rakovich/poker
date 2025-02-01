@@ -1,0 +1,42 @@
+export const TOURNAMENTS = [
+  {
+    title: "OFC Pineapple",
+    gameType: "NL 2-7 TRIPLE DRAW",
+    date: "12:00 pm, 28 July",
+    status: "Registering",
+    players: "1000/1000",
+    reward: "1000000",
+  },
+  {
+    title: "OFC Pineapple",
+    gameType: "NL Holdem",
+    date: "12:00 pm, 28 July",
+    status: "Registering",
+    players: "1/6",
+    reward: "100",
+  },
+  {
+    title: "Hourly Freeroll",
+    gameType: "NL OFC/PINEAPPLE PRG",
+    date: "12:00 pm, 28 July",
+    status: "Cancelled",
+    players: "1/10 000",
+    reward: "1000",
+  },
+  {
+    title: "OFC Pineapple",
+    gameType: "NL Holdem",
+    date: "12:00 pm, 28 July",
+    status: "Registering",
+    players: "1/6",
+    reward: "100",
+  },
+  {
+    title: "Hourly Freeroll",
+    gameType: "NL OFC/Pineapple PRG",
+    date: "12:00 pm, 28 July",
+    status: "Cancelled",
+    players: "1/10 000",
+    reward: "1000",
+  },
+];
