@@ -1,0 +1,41 @@
+.player-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 8px;
+  //   justify-content: center;
+  justify-items: center;
+  margin-top: 24px;
+
+  &__balance {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background-color: #373352;
+    border-radius: 24px;
+    padding-right: 8px;
+    min-width: 120px;
+    font-size: 12px;
+
+    img {
+      background-color: #00bb40;
+      border-radius: 24px;
+      width: 32px;
+      height: 26px;
+    }
+  }
+
+  &__avatar {
+    border: 1px solid #413e55;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
