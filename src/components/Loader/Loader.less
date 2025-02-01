@@ -30,12 +30,6 @@
   line-height: 12.19px;
 }
 
-.loading-text::after {
-  counter-reset: percentage 0;
-  animation: counter 3s linear infinite;
-  content: counter(percentage) "%";
-}
-
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
@@ -43,7 +37,7 @@
 }
 
 .loading-text {
-  animation: counter 3s linear infinite;
+  animation: counter 2s linear infinite;
   counter-reset: num var(--num);
 }
 
