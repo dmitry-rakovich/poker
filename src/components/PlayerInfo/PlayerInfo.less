@@ -3,26 +3,55 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 8px;
-  //   justify-content: center;
   justify-items: center;
   margin-top: 24px;
 
   &__balance {
+    background-color: #00bb40;
     height: 26px;
     display: flex;
     align-items: center;
     gap: 9px;
-    background-color: #373352;
     border-radius: 24px;
     padding-right: 8px;
     min-width: 120px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
     font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+
+    &.open {
+      background-color: #373352;
+    }
+
+    &:hover:not(.open) {
+      background-color: #43ce72;
+
+      img {
+        background-color: #43ce72;
+      }
+    }
+
+    &:active:not(.open) {
+      background-color: #0e8938;
+
+      img {
+        background-color: #43ce72;
+      }
+    }
 
     img {
       background-color: #00bb40;
       border-radius: 24px;
       width: 32px;
       height: 26px;
+      cursor: pointer;
+    }
+
+    &-value {
+      font-weight: 400;
     }
   }
 

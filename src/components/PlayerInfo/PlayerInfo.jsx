@@ -8,11 +8,11 @@ const PlayerInfo = () => {
             <div className="player-info__avatar">
                 <img onClick={() => { }} src="/avatar.png" />
             </div>
-            <div className="player-info__balance">
-                <img onClick={() => { setIsOpen(!isOpen) }} src={isOpen ? "/visible.svg" : "/unvisible.svg"} />
-                <span>{isOpen ? "$100,500.00" : "****"}</span>
-            </div>
-        </div>
+            <button onClick={() => { setIsOpen(!isOpen) }} className={`player-info__balance ${isOpen ? "open" : ""}`}>
+                <img src={!isOpen ? "/visible.svg" : "/unvisible.svg"} />
+                <span>{isOpen ? <span className="player-info__balance-value">$100,500.00</span> : "Show balance"}</span>
+            </button>
+        </div >
     )
 }
 
