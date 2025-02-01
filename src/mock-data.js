@@ -66,3 +66,10 @@ export const TOURNAMENTS = [
     tournamentFeatures: [],
   },
 ];
+
+export const USER = {
+  name: "LongUserName",
+  balance: "100,500.00",
+  avatar: "/avatar.png",
+  rating: 5,
+};
