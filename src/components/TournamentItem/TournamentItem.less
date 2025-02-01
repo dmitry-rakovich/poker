@@ -1,0 +1,127 @@
+.tournament {
+  height: 78px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 8px 8px 24px;
+  background: #373352;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+
+  &:hover {
+    background-color: #423d62;
+  }
+
+  &:active {
+    background-color: #2f2b47;
+  }
+
+  &__game {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 8px;
+    color: #c3c2cb;
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+
+    span {
+      border: 1px solid #c3c2cb;
+      border-radius: 2px;
+      padding: 3px;
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 500;
+    color: #c3c2cb;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+
+  &__features {
+    display: flex;
+    gap: 5px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__status {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 16px;
+    writing-mode: sideways-lr;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &.registering {
+      background: #00bb40;
+    }
+
+    &.cancelled {
+      background-color: #5e5a79;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 80px;
+    height: 34px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #28a745;
+
+    &:hover:not(:disabled) {
+      background-color: #43ce72;
+    }
+
+    &:active:not(:disabled) {
+      background-color: #0e8938;
+    }
+
+    &:disabled {
+      background-color: #5e5a79;
+      color: #8f8d9e;
+      cursor: not-allowed;
+    }
+  }
+}
